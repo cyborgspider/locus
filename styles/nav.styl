@@ -1,0 +1,45 @@
+nav
+  padding 54px 0 0
+  max-width   1040px
+  margin  0 auto
+  clearfix()
+#logo
+  background  url(../img/logo-main.png)
+  width       217px
+  height      52px
+  text-indent -9999px
+  float       left
+  a
+    width   100%
+    height  100%
+    display block
+.nav
+  margin-left 120px
+  float       left
+.category
+  float        left
+  margin-right 75px
+  &:last-child
+    margin-right 0
+.category>a
+  float        left
+  font-size    18px
+  float        left
+  color        black
+  font-weight  700
+  margin-right 20px
+  up()
+.subnav
+  width     70px
+  float     left
+  font-size 14px
+  li
+    border-bottom  dotted 1px black
+    &:last-child
+      border-bottom none
+  a
+    color black
+    &:hover
+      color $blue
+  &.services
+    width 140px

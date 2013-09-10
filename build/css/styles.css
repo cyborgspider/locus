@@ -4,4 +4,42 @@ ol,ul{list-style:none}
 table{border-collapse:separate;border-spacing:0;vertical-align:middle}
 caption,th,td{text-align:left;font-weight:normal;vertical-align:middle}
 a img{border:none}
-body{background:#000;color:#fff;font-family:#fff;font:normal 16px/24px Arial}
+@import url("http://fonts.googleapis.com/css?family=Roboto:300,400,500,700");
+body{font:15px/24px 'Roboto',Arial,sans-serif;color:#000;font-weight:400}
+a{text-decoration:none}
+nav{padding:54px 0 0;max-width:1040px;margin:0 auto;zoom:1}
+nav:before,nav:after{content:"";display:table}
+nav:after{clear:both}
+#logo{background:url("../img/logo-main.png");width:217px;height:52px;text-indent:-9999px;float:left;}
+#logo a{width:100%;height:100%;display:block}
+.nav{margin-left:120px;float:left}
+.category{float:left;margin-right:75px;}
+.category:last-child{margin-right:0}
+.category>a{float:left;font-size:18px;float:left;color:#000;font-weight:700;margin-right:20px;text-transform:uppercase}
+.subnav{width:70px;float:left;font-size:14px;}
+.subnav li{border-bottom:dotted 1px #000;}
+.subnav li:last-child{border-bottom:none}
+.subnav a{color:#000;}
+.subnav a:hover{color:#0072d3}
+.subnav.services{width:140px}
+.btn-read-more{width:100px;height:47px;background:url("../img/btn-read-more.png");display:block;text-indent:-9999px;margin:0 auto;}
+.btn-read-more:hover{background-position:100% 0}
+body.home .content{padding-bottom:70px;margin:0 auto;max-width:1040px}
+body.home h1{font-size:32px;font-weight:500;color:#000;text-transform:uppercase;text-align:center;margin-bottom:55px}
+.service{width:33%;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;display:inline-block;text-align:center;padding:0 30px;}
+.service h2{color:#0072d3;font-size:22px;font-weight:500;text-transform:uppercase;margin-bottom:20px}
+.service p{margin-bottom:20px}
+#slideshow{height:400px;background:url("../img/slideshow-bg.png") no-repeat top center;margin-bottom:48px;position:relative;overflow:hidden}
+#slide-container{position:relative}
+.slide{position:absolute;top:0;width:1000px}
+footer{border-top:solid 5px #0072d3;background:#002c49}
+#footer-contact{padding:28px 0;color:#fff;max-width:1040px;margin:0 auto;zoom:1;}
+#footer-contact:before,#footer-contact:after{content:"";display:table}
+#footer-contact:after{clear:both}
+#footer-contact .location{float:left;width:33%;text-align:center;}
+#footer-contact .location h2{font-size:17.75px;margin-bottom:20px}
+#footer-contact .location p{font-size:13px}
+#footer-contact .location a{color:#fff;}
+#footer-contact .location a:hover{text-decoration:underline}
+#footer-copyright{background:#fff;padding:10px 0;font-size:13px;color:#000;text-align:center}
+body{background:#fff}

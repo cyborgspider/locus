@@ -2,27 +2,130 @@
   "CodeKitInfo" : "This is a CodeKit project configuration file. It is designed to sync project settings across multiple machines. Modifying the contents of this file can be a poor life decision if you don't know what you're doing. This file is not useful unless accompanied by the project that created it in CodeKit. For more information, see: http:\/\/incident57.com\/codekit",
   "creatorBuild" : "8300",
   "files" : {
-    "\/includes\/nav.jade" : {
+    "\/styles\/typography.styl" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/includes\/nav.jade",
+      "inputAbbreviatedPath" : "\/styles\/typography.styl",
+      "outputStyle" : 1,
+      "shouldRunBless" : 0,
+      "outputAbbreviatedPath" : "\/build\/css\/typography.css",
+      "fileType" : 8,
+      "debugStyle" : 0
+    },
+    "\/scripts\/scripts.coffee" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/scripts\/scripts.coffee",
+      "checkOutputStyle" : 0,
+      "minifyOutput" : 1,
+      "outputAbbreviatedPath" : "\/build\/js\/scripts.js",
+      "outputStyle" : 0,
+      "fileType" : 32
+    },
+    "\/styles\/slideshow.styl" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/styles\/slideshow.styl",
+      "outputStyle" : 1,
+      "shouldRunBless" : 0,
+      "outputAbbreviatedPath" : "\/build\/css\/slideshow.css",
+      "fileType" : 8,
+      "debugStyle" : 0
+    },
+    "\/build\/img\/slideshow-bg.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/build\/img\/slideshow-bg.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/build\/img\/slideshow-bg.png",
+      "initialSize" : 8508,
+      "fileType" : 8192
+    },
+    "\/includes\/head.jade" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/includes\/head.jade",
       "outputStyle" : 1,
       "compileDebug" : 1,
-      "outputAbbreviatedPath" : "\/includes\/build\/nav.html",
+      "outputAbbreviatedPath" : "\/includes\/build\/head.html",
       "fileType" : 512
     },
-    "\/build\/js\/scripts.js" : {
+    "\/build\/img\/temp1.jpg" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/build\/img\/temp1.jpg",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/build\/img\/temp1.jpg",
+      "initialSize" : 12918,
+      "fileType" : 4096
+    },
+    "\/build\/img\/ind-med.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/build\/img\/ind-med.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/build\/img\/ind-med.png",
+      "initialSize" : 1140,
+      "fileType" : 8192
+    },
+    "\/includes\/footer.jade" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/build\/js\/scripts.js",
+      "inputAbbreviatedPath" : "\/includes\/footer.jade",
       "outputStyle" : 1,
-      "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/build\/build\/js\/scripts.min.js",
-      "fileType" : 64
+      "compileDebug" : 1,
+      "outputAbbreviatedPath" : "\/includes\/build\/footer.html",
+      "fileType" : 512
+    },
+    "\/build\/img\/temp.jpg" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/build\/img\/temp.jpg",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/build\/img\/temp.jpg",
+      "initialSize" : 70304,
+      "fileType" : 4096
+    },
+    "\/styles\/footer.styl" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/styles\/footer.styl",
+      "outputStyle" : 1,
+      "shouldRunBless" : 0,
+      "outputAbbreviatedPath" : "\/build\/css\/footer.css",
+      "fileType" : 8,
+      "debugStyle" : 0
+    },
+    "\/build\/img\/ind-small.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/build\/img\/ind-small.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/build\/img\/ind-small.png",
+      "initialSize" : 1121,
+      "fileType" : 8192
     },
     "\/styles\/styles.styl" : {
       "ignoreWasSetByUser" : 0,
@@ -36,14 +139,27 @@
       "fileType" : 8,
       "debugStyle" : 0
     },
-    "\/build\/index.html" : {
+    "\/build\/img\/logo-main.png" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
+      "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/build\/index.html",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 2048
+      "inputAbbreviatedPath" : "\/build\/img\/logo-main.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/build\/img\/logo-main.png",
+      "initialSize" : 5086,
+      "fileType" : 8192
+    },
+    "\/build\/img\/btn-read-more.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/build\/img\/btn-read-more.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/build\/img\/btn-read-more.png",
+      "initialSize" : 3836,
+      "fileType" : 8192
     },
     "\/index.jade" : {
       "ignoreWasSetByUser" : 0,
@@ -62,8 +178,52 @@
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/build\/css\/styles.css",
-      "outputAbbreviatedPath" : "No Output Path",
+      "outputAbbreviatedPath" : "\/No Output Path",
       "fileType" : 16
+    },
+    "\/build\/index.html" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/build\/index.html",
+      "outputAbbreviatedPath" : "\/No Output Path",
+      "fileType" : 2048
+    },
+    "\/styles\/nav.styl" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/styles\/nav.styl",
+      "outputStyle" : 1,
+      "shouldRunBless" : 0,
+      "outputAbbreviatedPath" : "\/build\/css\/nav.css",
+      "fileType" : 8,
+      "debugStyle" : 0
+    },
+    "\/styles\/variables.styl" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/styles\/variables.styl",
+      "outputStyle" : 1,
+      "shouldRunBless" : 0,
+      "outputAbbreviatedPath" : "\/build\/css\/variables.css",
+      "fileType" : 8,
+      "debugStyle" : 0
+    },
+    "\/build\/img\/temp2.jpg" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/build\/img\/temp2.jpg",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/build\/img\/temp2.jpg",
+      "initialSize" : 226434,
+      "fileType" : 4096
     },
     "\/styles\/nib.styl" : {
       "ignoreWasSetByUser" : 0,
@@ -77,17 +237,82 @@
       "fileType" : 8,
       "debugStyle" : 0
     },
-    "\/scripts\/scripts.coffee" : {
+    "\/styles\/home.styl" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/styles\/home.styl",
+      "outputStyle" : 1,
+      "shouldRunBless" : 0,
+      "outputAbbreviatedPath" : "\/build\/css\/home.css",
+      "fileType" : 8,
+      "debugStyle" : 0
+    },
+    "\/build\/js\/scripts.js" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/build\/js\/scripts.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/build\/build\/js\/scripts.min.js",
+      "fileType" : 64
+    },
+    "\/styles\/buttons.styl" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/styles\/buttons.styl",
+      "outputStyle" : 1,
+      "shouldRunBless" : 0,
+      "outputAbbreviatedPath" : "\/build\/css\/buttons.css",
+      "fileType" : 8,
+      "debugStyle" : 0
+    },
+    "\/build\/img\/temp0.jpg" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/scripts\/scripts.coffee",
-      "checkOutputStyle" : 0,
-      "minifyOutput" : 1,
-      "outputAbbreviatedPath" : "\/build\/js\/scripts.js",
-      "outputStyle" : 0,
-      "fileType" : 32
+      "inputAbbreviatedPath" : "\/build\/img\/temp0.jpg",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/build\/img\/temp0.jpg",
+      "initialSize" : 37731,
+      "fileType" : 4096
+    },
+    "\/includes\/nav.jade" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/includes\/nav.jade",
+      "outputStyle" : 1,
+      "compileDebug" : 1,
+      "outputAbbreviatedPath" : "\/includes\/build\/nav.html",
+      "fileType" : 512
+    },
+    "\/build\/img\/indicator.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/build\/img\/indicator.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/build\/img\/indicator.png",
+      "initialSize" : 1325,
+      "fileType" : 8192
+    },
+    "\/build\/css\/footer.css" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/build\/css\/footer.css",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 16
     }
   },
   "manualImportLinks" : [
@@ -263,7 +488,7 @@
   },
   "projectAttributes" : {
     "bourbonEnabled" : 0,
-    "displayValue" : "_codekit",
+    "displayValue" : "locus",
     "displayValueWasSetByUser" : 0,
     "compassEnabled" : 0
   }
