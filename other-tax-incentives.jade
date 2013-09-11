@@ -1,0 +1,80 @@
+extends subpage-template
+block document-title
+  title LOCUS Enterprise Zone
+block body-class
+  body.services  
+block content
+  h1 Professional tax credit services provider with knowledge and dedication for the client's benefit. 
+  .content
+    #side-nav
+      a(href="rd-tax-credit.html") R&amp;D Tax Credit
+      a(href="enterprise-zone.html") Enterprise Zone
+      a.active(href="#") Other Tax Incentives
+    .body 
+      p Our tax credit specialist team has worked with many other incentives for years; we can help you identify and capture potential extra revenues.
+      #tab-section
+        ul#tab-nav
+          li.active(data-tab='work') Work Opportunity
+          li(data-tab='new-markets') New Markets
+          li(data-tab='low-income') Low Income Housing
+          li(data-tab='renewable') Renewable Energy
+          li.long(data-tab='three-part') Three-Part Economic Development
+
+        .tab-content.active(data-tab='work')
+          h2 WOTC is a federal hiring incentive for companies that employ individuals from the following target populations: 
+          ul
+            li Temporary Assistance for Needy Families (TANF) recipients
+            li Veterans
+            li Ex-felons
+            li Supplemental Security Income (SSI) recipients
+            li High-risk youth
+            li Vocational rehabilitation referrals
+            li Youth Employment program participants
+            li Food stamp recipients
+        .tab-content(data-tab='new-markets')
+          p NMTC, administered by the Community Development Financial Institutions Fund of Department of Treasury, provides tax credits for new private sector investment in economically distressed communities through certified Community Development Entities (CDEs).
+          h2 Four types of activities by CDEs are possible when utilizing the NMTCs:
+          ul
+            li Making investment in or loans to qualifying businesses
+            li Providing financial consulting to businesses and residents of low income communities
+            li Making investments in or loans to other CDEs which then makes investments in, loans to, or provide financial consulting to qualifying businesses
+            li Purchasing loans from CDEs
+        .tab-content(data-tab='low-income')
+          p As part of the Tax Reform Act of 1986, the United States Congress created the Low-Income Housing Tax Credit (LIHTC) Program to promote the development of affordable rental housing for low-income individuals and families.
+          h2 To be eligible for consideration under the LIHTC Program, a proposed project must:
+          ul
+            li Be a residential rental property
+            li Commit to one of two possible low-income occupancy threshold requirements
+            li Restrict rents, including utility charges, in low-income units
+            li Operate under the rent and income restrictions for 30 years or longer, pursuant to written agreements with the agency issuing the tax credits.
+        .tab-content(data-tab='renewable')
+          p Investment Tax Credit is offered to commercial renewable energy projects based on total dollars spent on qualified and eligible property.
+          h2 Costs that are eligible for the credit:
+          ul
+            li Hard costs (panels, inverters, mounting, electrical wiring, etc.)
+            li Direct and indirect costs (system integration, permits, city fees, etc.)
+          p Production Tax Credit is available with respect to electricity produced from qualified energy sources.
+          ul
+            li Wind
+            li Closed-loop biomass
+            li Open-loop biomass
+            li Geothermal
+            li Small irrigation hydro
+            li Municipal solid waste
+            li Qualified hydropower
+        .tab-content(data-tab='three-part')
+          p Governor Brown signed SB 90 and AB 93 on July 11, 2013. These bills phase out California’s 28 year-old Enterprise Zone. The program, which provides tax credits to businesses in targeted areas if they purchase qualified equipment or hire qualified employees, will be replaced with Governor Brown's new three-part economic development plan.
+          a(href="#") Read More
+block script
+  script
+    $(function(){
+      $('#tab-section').on('click','#tab-nav li', function(){
+          thisTab = $(this);
+          tabName = thisTab.data('tab');
+          tabContent = $('#tab-section').find('.tab-content[data-tab='+tabName+']')
+          thisTab.siblings().removeClass('active');
+          thisTab.addClass('active');
+          tabContent.siblings().removeClass('active');
+          tabContent.addClass('active');
+        })
+    });

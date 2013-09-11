@@ -7,9 +7,51 @@ global-reset()
 @import 'nav'
 @import 'buttons'
 @import 'home'
+@import 'locus'
+@import 'services'
 @import 'slideshow'
 @import 'footer'
 
 body
   background  white
 
+.cl
+  clearfix()
+
+.content
+  margin    0 auto
+  max-width 1040px
+  position  relative
+  padding   70px 0 35px
+  p
+    margin-bottom 25px
+
+#side-nav
+  text-align right
+  position   absolute
+  right      778px
+  a
+    display       block
+    clear         both
+    font-size     22px
+    font-weight   400
+    color         black
+    margin-bottom 20px
+    position relative
+    &.active
+      color         $blue
+      font-weight   500
+    &.active:after
+      background url(../img/ind-med.png) 0 0 no-repeat
+      position   absolute
+      content    ''
+      width      14px
+      height     13px
+      top        5px
+      right      -20px
+    &:hover
+      color $blue
+
+.body
+  max-width       670px
+  margin-left 320px
