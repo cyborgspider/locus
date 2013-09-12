@@ -1,0 +1,74 @@
+body.contact
+  h1
+    background  url(../img/bg-contact.jpg) no-repeat center
+    height      263px
+    text-indent -9999px
+  .content
+    min-height 625px
+form
+  padding 20px 40px
+  .row
+    margin-bottom 20px
+    clearfix()
+
+.input-wrap
+  position     relative
+  width        285px
+  float      left
+.input-wrap+.input-wrap
+  float right
+
+.parsley-error-list
+  position  absolute
+  font-size 11px
+
+input[type="text"]
+textarea
+  border        solid 1px #cecece
+  background    white
+  box-shadow    inset 0 1px 0 #e5e5e5
+  border-radius 3px
+  width         100%
+  box-sizing    border-box
+  padding       0 10px
+  line-height   38px
+  font-size     15px
+  &.error
+    background   #f8cfcf
+    border-color red
+    box-shadow none
+  &.success
+    background #aedc9c
+    border-color #2b5b18
+    box-shadow none
+
+textarea
+  resize      none
+  line-height 24px
+  padding     7px 10px
+  height      162px
+
+select
+  width       285px
+  height      38px 
+  line-height 38px
+
+#submit
+#cancel
+  width       111px
+  height      41px
+  display     block
+  text-indent -9999px
+  border      none
+  cursor      pointer
+#submit
+  background url(../img/btn-submit.jpg)
+  float right
+  margin-left 5px
+  &:hover
+    background-position 100% 0
+#cancel
+  background url(../img/btn-cancel.jpg)
+  float right
+  &:hover
+    background-position 100% 0

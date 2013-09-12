@@ -1,0 +1,73 @@
+extends subpage-template
+block document-title
+  title LOCUS Contact
+block body-class
+  body.contact  
+block content
+  h1 We look forward to speaking and discussing with you about possible opportunities for us.
+  .content
+    #side-nav
+      .location
+        h2 Irvine
+        p 10 Corporate Park, Ste. 210, Irvine CA 92606
+        p Phone. <a href="tel:9495531110">949.553.1110</a>
+        p Fax. 213.973.4720
+        p Email. <a href="mailto:info@locustaxcredits.com">info@locustaxcredits.com</a>
+        p <a href="#" target="_blank">view map</a>
+      .location
+        h2 Los Angeles
+        p 4801 Wilshire Blvd. Ste. 306. Los Angeles, CA 90010
+        p Phone. <a href="tel:2132939110">213.293.9110</a>
+        p Fax. 213.973.4720
+        p Email. <a href="mailto:info@locustaxcredits.com">info@locustaxcredits.com</a>
+        p <a href="#" target="_blank">view map</a>
+      .location
+        h2 Northeast Regional Office
+        p 1830 Easton Ave. Somerset, NJ 08873
+        p Email. <a href="mailto:info@locustaxcredits.com">info@locustaxcredits.com</a>
+        p <a href="#" target="_blank">view map</a>                
+    .body 
+      p We will answer all of your questions, as they impact both your tax and financial situations.  We welcome you to contact us anytime.
+      form( data-validate="parsley")
+        p *Please fill in all the fields 
+        .row
+          .input-wrap
+            input(type="text",name="first_name", placeholder="First Name",data-required)
+          .input-wrap
+            input(type="text",name="last_name",placeholder="Last Name",data-required)
+        .row
+          .input-wrap
+            input(type="text",name="email",placeholder="Email",data-required,data-type="email")
+          .input-wrap
+            input(type="text",name="phone",placeholder="Phone Number",data-required,data-type="phone")
+        .row
+          .input-wrap
+            input(type="text",name="company",placeholder="Company Name",data-required)
+          .input-wrap
+            input(type="text",name="address",placeholder="Street Address",data-required)
+        .row
+          .input-wrap
+            input(type="text",name="city",placeholder="City",data-required)
+          .input-wrap
+            input(type="text",name="state",placeholder="State/Provence",data-required)
+        .row
+          .input-wrap
+            input(type="text",name="zip",placeholder="Zip/postal code",data-required)
+          .input-wrap
+            input(type="text",name="country",placeholder="Country/Region", data-required)
+        .row
+          textarea(name="comments",data-required,data-maxlength='500',placeholder="Comments/Questions (Maximum 500 Characters)")
+        .row
+          button#submit Submit
+          button#cancel Cancel
+block script
+  script(src="js/custom-select.js")
+  script(src="js/parsley.js")
+  script
+    $(function(){
+      //$('select').minimalect();
+      $('form').parsley({ 
+        successClass: 'success', 
+        errorClass: 'error' 
+      });
+    });
