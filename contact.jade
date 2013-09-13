@@ -28,7 +28,7 @@ block content
         p <a href="#" target="_blank">view map</a>                
     .body 
       p We will answer all of your questions, as they impact both your tax and financial situations.  We welcome you to contact us anytime.
-      form( data-validate="parsley")
+      form( method="post",action="contact-form.php",data-validate="parsley")
         p *Please fill in all the fields 
         .row
           .input-wrap
@@ -58,8 +58,8 @@ block content
         .row
           textarea(name="comments",data-required,data-maxlength='500',placeholder="Comments/Questions (Maximum 500 Characters)")
         .row
-          button#submit Submit
-          button#cancel Cancel
+          input(type="submit")#submit Submit
+          input(type="reset")#cancel Cancel
 block script
   script(src="js/custom-select.js")
   script(src="js/parsley.js")
