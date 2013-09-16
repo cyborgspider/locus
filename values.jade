@@ -2,19 +2,44 @@ extends subpage-template
 block document-title
   title LOCUS Values
 block body-class
-  body.locus  
+  body.locus
+block nav
+  nav
+    #logo: a(href="index.html") Locus Tax Credits
+    ul.nav
+      li.active.category
+        a(href="about-us.html") Locus
+        ul.subnav
+          li: a(href="about-us.html") About Us
+          li.active: a(href="values.html") Values
+      li.category: a(href="rd-tax-credit.html") Services
+        ul.subnav.services
+          li: a(href="rd-tax-credit.html") R&amp;D Tax Credit
+          li: a(href="enterprise-zone.html") Enterprise Zone
+          li: a(href="other-tax-incentives.html") Other Tax Incentives
+      li.category: a(href="contact.html") Contact
+    #navicon
+    ul#mobile-nav
+      li.category: a(href="about-us.html") Locus
+      li: a(href="about-us.html") About Us
+      li: a.active(href="values.html") Values
+      li.category: a(href="rd-tax-credit.html") Services
+      li: a(href="rd-tax-credit.html") R&amp;D Tax Credit
+      li: a(href="enterprise-zone.html") Enterprise Zone
+      li: a(href="other-tax-incentives.html") Other Tax Incentives
+      li.category: a(href="contact.html") Contact
 block content
-  h1 Locus Tax Credits LLC is a professional firm committed to serving the needs of our clients. 
+  h1 Locus Tax Credits LLC is a professional firm committed to serving the needs of our clients.
   .content
     #side-nav
-      a.side-nav-link(href="#") About Us
+      a.side-nav-link(href="about-us.html") About Us
       a.side-nav-link.active(href="#") Values
-    .body 
-      h2 Value   
+    .body
+      h2 Value
       p Our main purpose is to bring value to our clients. Through detailed work, high-quality studies, and timely completion of projects, we create significant tax savings. Our goal is to bring value to our clients by providing quality service, building long-term relationships, and ensuring a high standard of professional ethics.
       h2 Professionalism
       p By combining our expertise, experience and the energy of our staff, each client receives close personal and professional attention. Our high standards, service and specialized staff reveal the difference between our outstanding performance, and other firms. We make sure that every client is served by the expertise of our whole firm.
       h2 Quality
-      p An accounting firm is known for the quality of its service. Our firm's reputation reflects the high standards we demand of ourselves. 
+      p An accounting firm is known for the quality of its service. Our firm's reputation reflects the high standards we demand of ourselves.
       p Our primary goal as a trusted advisor is to be available to provide insightful advice to enable our clients to make informed financial decisions. We do not accept anything less from ourselves and this is what we deliver to you.
       p We feel it is extremely important to continually professionally educate ourselves to improve our technical expertise, financial knowledge and service to our clients.

@@ -2,7 +2,32 @@ extends subpage-template
 block document-title
   title LOCUS Contact
 block body-class
-  body.contact  
+  body.contact
+block nav
+  nav
+    #logo: a(href="index.html") Locus Tax Credits
+    ul.nav
+      li.category
+        a(href="about-us.html") Locus
+        ul.subnav
+          li: a(href="about-us.html") About Us
+          li: a(href="values.html") Values
+      li.category: a(href="rd-tax-credit.html") Services
+        ul.subnav.services
+          li: a(href="rd-tax-credit.html") R&amp;D Tax Credit
+          li: a(href="enterprise-zone.html") Enterprise Zone
+          li: a(href="other-tax-incentives.html") Other Tax Incentives
+      li.active.category: a(href="contact.html") Contact
+    #navicon
+    ul#mobile-nav
+      li.category: a(href="about-us.html") Locus
+      li: a(href="about-us.html") About Us
+      li: a(href="values.html") Values
+      li.category: a(href="rd-tax-credit.html") Services
+      li: a(href="rd-tax-credit.html") R&amp;D Tax Credit
+      li: a(href="enterprise-zone.html") Enterprise Zone
+      li: a(href="other-tax-incentives.html") Other Tax Incentives
+      li.category: a(href="contact.html") Contact
 block content
   h1 We look forward to speaking and discussing with you about possible opportunities for us.
   .content
@@ -25,11 +50,11 @@ block content
         h2 Northeast Regional Office
         p 1830 Easton Ave. Somerset, NJ 08873
         p Email. <a href="mailto:info@locustaxcredits.com">info@locustaxcredits.com</a>
-        p <a href="#" target="_blank">view map</a>                
-    .body 
+        p <a href="#" target="_blank">view map</a>
+    .body
       p We will answer all of your questions, as they impact both your tax and financial situations.  We welcome you to contact us anytime.
       form( method="post",action="contact-form.php",data-validate="parsley")
-        p *Please fill in all the fields 
+        p *Please fill in all the fields
         .row
           .input-wrap
             input(type="text",name="first_name", placeholder="First Name",data-required)
@@ -56,6 +81,15 @@ block content
           .input-wrap
             input(type="text",name="country",placeholder="Country/Region", data-required)
         .row
+          .input-wrap
+            select(name="reason",data-required)
+              option(value="No reason") Reason for contacting us
+              option(value="Research and development") Research and development
+              option(value="Enterprise Zone, Work Opportunity Tax Credit") Enterprise Zone, Work Opportunity Tax Credit
+              option(value="Low Income Housing Tax Credit") Low Income Housing Tax Credit
+              option(value="Renewable Energy Tax Credit") Renewable Energy Tax Credit
+              option(value="Other inquiries ") Other inquiries
+        .row
           textarea(name="comments",data-required,data-maxlength='500',placeholder="Comments/Questions (Maximum 500 Characters)")
         .row
           input(type="submit")#submit Submit
@@ -66,8 +100,8 @@ block script
   script
     $(function(){
       //$('select').minimalect();
-      $('form').parsley({ 
-        successClass: 'success', 
-        errorClass: 'error' 
+      $('form').parsley({
+        successClass: 'success',
+        errorClass: 'error'
       });
     });

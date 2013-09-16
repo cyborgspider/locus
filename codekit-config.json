@@ -1,17 +1,15 @@
 {
   "CodeKitInfo" : "This is a CodeKit project configuration file. It is designed to sync project settings across multiple machines. Modifying the contents of this file can be a poor life decision if you don't know what you're doing. This file is not useful unless accompanied by the project that created it in CodeKit. For more information, see: http:\/\/incident57.com\/codekit",
-  "creatorBuild" : "8300",
+  "creatorBuild" : "8317",
   "files" : {
-    "\/subpage-template.jade" : {
+    "\/build\/css\/footer.css" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/subpage-template.jade",
-      "outputStyle" : 1,
-      "compileDebug" : 1,
-      "outputAbbreviatedPath" : "\/build\/subpage-template.html",
-      "fileType" : 512
+      "inputAbbreviatedPath" : "\/build\/css\/footer.css",
+      "outputAbbreviatedPath" : "\/No Output Path",
+      "fileType" : 16
     },
     "\/build\/img\/slideshow-bg.png" : {
       "ignoreWasSetByUser" : 0,
@@ -24,14 +22,16 @@
       "initialSize" : 8508,
       "fileType" : 8192
     },
-    "\/build\/css\/footer.css" : {
+    "\/build\/img\/logo-main.png" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
+      "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/build\/css\/footer.css",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 16
+      "inputAbbreviatedPath" : "\/build\/img\/logo-main.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/build\/img\/logo-main.png",
+      "initialSize" : 5086,
+      "fileType" : 8192
     },
     "\/includes\/footer.jade" : {
       "ignoreWasSetByUser" : 0,
@@ -141,7 +141,7 @@
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/build\/other-tax-incentives.html",
-      "outputAbbreviatedPath" : "No Output Path",
+      "outputAbbreviatedPath" : "\/No Output Path",
       "fileType" : 2048
     },
     "\/build\/rd-tax-credit.html" : {
@@ -150,7 +150,7 @@
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/build\/rd-tax-credit.html",
-      "outputAbbreviatedPath" : "No Output Path",
+      "outputAbbreviatedPath" : "\/No Output Path",
       "fileType" : 2048
     },
     "\/build\/index.html" : {
@@ -236,7 +236,7 @@
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/build\/values.html",
-      "outputAbbreviatedPath" : "No Output Path",
+      "outputAbbreviatedPath" : "\/No Output Path",
       "fileType" : 2048
     },
     "\/styles\/typography.styl" : {
@@ -250,6 +250,17 @@
       "outputAbbreviatedPath" : "\/build\/css\/typography.css",
       "fileType" : 8,
       "debugStyle" : 0
+    },
+    "\/build\/img\/navicon.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/build\/img\/navicon.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/build\/img\/navicon.png",
+      "initialSize" : 973,
+      "fileType" : 8192
     },
     "\/build\/js\/scripts.js" : {
       "ignoreWasSetByUser" : 0,
@@ -268,7 +279,7 @@
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/build\/thanks.html",
-      "outputAbbreviatedPath" : "No Output Path",
+      "outputAbbreviatedPath" : "\/No Output Path",
       "fileType" : 2048
     },
     "\/styles\/locus.styl" : {
@@ -311,7 +322,7 @@
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/build\/about-us.html",
-      "outputAbbreviatedPath" : "No Output Path",
+      "outputAbbreviatedPath" : "\/No Output Path",
       "fileType" : 2048
     },
     "\/build\/img\/btn-read-more.png" : {
@@ -331,7 +342,7 @@
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/build\/css\/custom-select.css",
-      "outputAbbreviatedPath" : "No Output Path",
+      "outputAbbreviatedPath" : "\/No Output Path",
       "fileType" : 16
     },
     "\/includes\/head.jade" : {
@@ -351,7 +362,7 @@
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/build\/enterprise-zone.html",
-      "outputAbbreviatedPath" : "No Output Path",
+      "outputAbbreviatedPath" : "\/No Output Path",
       "fileType" : 2048
     },
     "\/styles\/media.styl" : {
@@ -377,18 +388,6 @@
       "initialSize" : 1140,
       "fileType" : 8192
     },
-    "\/styles\/styles.styl" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/styles\/styles.styl",
-      "outputStyle" : 1,
-      "shouldRunBless" : 0,
-      "outputAbbreviatedPath" : "\/build\/css\/styles.css",
-      "fileType" : 8,
-      "debugStyle" : 0
-    },
     "\/styles\/services.styl" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
@@ -398,6 +397,18 @@
       "outputStyle" : 1,
       "shouldRunBless" : 0,
       "outputAbbreviatedPath" : "\/build\/css\/services.css",
+      "fileType" : 8,
+      "debugStyle" : 0
+    },
+    "\/styles\/styles.styl" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/styles\/styles.styl",
+      "outputStyle" : 1,
+      "shouldRunBless" : 0,
+      "outputAbbreviatedPath" : "\/build\/css\/styles.css",
       "fileType" : 8,
       "debugStyle" : 0
     },
@@ -434,21 +445,32 @@
       "outputAbbreviatedPath" : "\/includes\/build\/nav.html",
       "fileType" : 512
     },
-    "\/build\/contact-form.php" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/build\/contact-form.php",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 2048
-    },
     "\/build\/contact.html" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/build\/contact.html",
+      "outputAbbreviatedPath" : "\/No Output Path",
+      "fileType" : 2048
+    },
+    "\/build\/img\/temp2.jpg" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/build\/img\/temp2.jpg",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/build\/img\/temp2.jpg",
+      "initialSize" : 226434,
+      "fileType" : 4096
+    },
+    "\/build\/contact-form.php" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/build\/contact-form.php",
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 2048
     },
@@ -462,17 +484,6 @@
       "compileDebug" : 1,
       "outputAbbreviatedPath" : "\/build\/values.html",
       "fileType" : 512
-    },
-    "\/build\/img\/temp2.jpg" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/build\/img\/temp2.jpg",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/build\/img\/temp2.jpg",
-      "initialSize" : 226434,
-      "fileType" : 4096
     },
     "\/build\/img\/indicator.png" : {
       "ignoreWasSetByUser" : 0,
@@ -597,16 +608,16 @@
       "fileType" : 8,
       "debugStyle" : 0
     },
-    "\/build\/img\/logo-main.png" : {
+    "\/subpage-template.jade" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
+      "ignore" : 1,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/build\/img\/logo-main.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/build\/img\/logo-main.png",
-      "initialSize" : 5086,
-      "fileType" : 8192
+      "inputAbbreviatedPath" : "\/subpage-template.jade",
+      "outputStyle" : 1,
+      "compileDebug" : 1,
+      "outputAbbreviatedPath" : "\/build\/subpage-template.html",
+      "fileType" : 512
     },
     "\/styles\/footer.styl" : {
       "ignoreWasSetByUser" : 0,
@@ -639,7 +650,10 @@
     "sassAutoOutputPathStyle" : 2,
     "stylusAutoOutputPathReplace2" : "css",
     "lessAutoOutputPathStyle" : 2,
+    "lessIECompatibility" : 1,
     "genericWebpageFileExtensionsString" : "html, htm, shtml, shtm, xhtml, php, jsp, asp, aspx, erb, ctp",
+    "lessStrictUnits" : 0,
+    "lessStrictMath" : 0,
     "coffeeMinifyOutput" : 1,
     "javascriptOutputSuffix" : ".min",
     "jadeOutputStyle" : 1,
@@ -788,6 +802,7 @@
     "jadeCompileDebug" : 1,
     "slimRailsCompatible" : 0,
     "kitAutoOutputPathReplace2" : "",
+    "lessRelativeURLS" : 0,
     "lessDebugStyle" : 0,
     "javascriptAutoOutputPathRelativePath" : "..\/build\/js",
     "slimAutoOutputPathStyle" : 2

@@ -7,26 +7,27 @@
   .content
     max-width     100%
   .body
-    margin-left 260px    
+    margin-left 260px
     padding-right 30px
   #side-nav
-    right 75%     
+    right 75%
   body.contact
     #side-nav
       right 75%
       .location
         width 160px
   .input-wrap
-    width 49% 
+    width 49%
 
 @media only screen and (max-width : 878px)
-  .category
-    margin-right 25px 
+  .nav
+    .category
+      margin-right 25px
   form
     padding 0
 
 
-// iPads (portrait) 
+// iPads (portrait)
 @media screen and (max-width:768px)
   .nav
     margin-left 78px
@@ -49,11 +50,16 @@
     max-width 680px
     .location
       width 30%
+  body.locus
+    h1
+      background-position center -261px
+      height              203px
 
 @media screen and (max-width:480px)
-  .category
-    clear         both
-    margin-bottom 20px
+  .nav
+    .category
+      clear         both
+      margin-bottom 20px
   .category>a
     width 100px
   #footer-contact
@@ -72,7 +78,7 @@
     text-align left
     .side-nav-link
       &.active:after
-        right auto 
+        right auto
   .body
     padding-left 30px
     margin-left  0
@@ -81,10 +87,10 @@
       right         auto
       padding-right 60px
       .location
-        width 100%   
+        width 100%
   .service
     width         100%
-    box-sizing    border-box 
+    box-sizing    border-box
     display       inline-block
     text-align    center
     margin-bottom 30px
@@ -93,6 +99,45 @@
       margin-bottom  10px
     p
       margin-bottom 10px
-  
+  body.locus
+    h1
+      background-position center -464px
+      height              162px
 
-
+@media screen and (max-width:320px)
+  body.services
+  body.locus
+  body.contact
+    h1
+      display none
+    nav
+      h1
+        display block
+  body.home
+    h1
+      margin-b
+  nav
+    padding-top 20px
+    position    fixed
+    background  white
+    width       100%
+    z-index     3
+  .nav
+    display none
+  #navicon
+    display block
+  .content
+    padding-top 100px
+  #side-nav
+    display none
+  .subnav
+    clear both
+  #tab-nav li.long
+    height auto
+  .body
+    padding 0 20px
+  .input-wrap
+    width         100%
+    margin-bottom 10px
+  form .row
+    margin-bottom 0
