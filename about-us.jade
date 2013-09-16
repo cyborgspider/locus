@@ -2,13 +2,28 @@ extends subpage-template
 block document-title
   title LOCUS About Us
 block body-class
-  body.locus  
+  body.locus
+block nav
+  nav
+    h1#logo: a(href="index.html") Locus Tax Credits
+    ul.nav
+      li.category
+        a(href="about-us.html") Locus
+        ul.subnav
+          li.active: a(href="about-us.html") About Us
+          li: a(href="values.html") Values
+      li.category: a(href="rd-tax-credit.html") Services
+        ul.subnav.services
+          li: a(href="rd-tax-credit.html") R&amp;D Tax Credit
+          li: a(href="enterprise-zone.html") Enterprise Zone
+          li: a(href="other-tax-incentives.html") Other Tax Incentives
+      li.category: a(href="contact.html") Contact     
 block content
   h1 Locus Tax Credits LLC is a professional firm committed to serving the needs of our clients. 
   .content
     #side-nav
       a.side-nav-link.active(href="#") About Us
-      a.side-nav-link(href="#") Values
+      a.side-nav-link(href="values.html") Values
     .body    
       p Our team of dedicated CPA and tax credit experts has an intricate insight of the possibilities of your business' potential extra revenue.
         | We are dedicated to customer profitability and our success has been measured by a commitment to be solely focused on the business of tax credits and government incentives. 

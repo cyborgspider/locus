@@ -18,6 +18,7 @@ nav:after{clear:both}
 .subnav{width:70px;float:left;font-size:14px;}
 .subnav li{border-bottom:dotted 1px #000;}
 .subnav li:last-child{border-bottom:none}
+.subnav li.active a{color:#0072d3}
 .subnav a{color:#000;}
 .subnav a:hover{color:#0072d3}
 .subnav.services{width:140px}
@@ -28,7 +29,7 @@ body.home h1{font-size:32px;font-weight:500;color:#000;text-transform:uppercase;
 .service{width:33%;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;display:inline-block;text-align:center;padding:0 30px;}
 .service h2{color:#0072d3;font-size:22px;font-weight:500;text-transform:uppercase;margin-bottom:20px}
 .service p{margin-bottom:20px}
-body.locus h1{background:url("../img/bg-locus.jpg") no-repeat center;height:261px;text-indent:-9999px}
+body.locus h1{background:url("../img/bg-locus.jpg") no-repeat center 0;height:261px;text-indent:-9999px}
 body.locus .content h2{color:#fff;background:#0072d3;display:inline-block;padding:0 9px 0 8px;-webkit-border-radius:3px;border-radius:3px;font-size:14px;line-height:25px;margin-bottom:20px;text-transform:uppercase}
 body.services h1{background:url("../img/bg-services.jpg") no-repeat center;height:265px;text-indent:-9999px}
 body.services .content h2{color:#2e9fff;font-size:18px}
