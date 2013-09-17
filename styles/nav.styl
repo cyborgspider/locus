@@ -59,7 +59,7 @@ nav
   right         20px
   top           28px
   display       none
-  background    url(../img/navicon.png) $blue no-repeat center center
+  background    url(../img/navicon.png) #0073bd no-repeat center center
   border-radius 2px
   z-index       2
   cursor        pointer
@@ -68,26 +68,27 @@ nav
 #mobile-nav
   position   absolute
   width      100%
-  background white
+  background $blue
   z-index    1
   overflow   hidden
   height     0
-  top        92px
-  background white
+  top        81px
+  transition height 0.5s 
   a
-    color   black
+    color   white
     width   100%
     height  100%
     display block
   li
     clear         both
-    border-bottom solid 1px #ccc
-    background    white
+    border-bottom solid 1px $blue-dark
+    background    $blue
     padding       10px
+    clearfix()
   li.category
-    background #eee
+    background black
   li.active
     a
-      color $blue
+      color black
   &.expanded
-    height auto
+    height 360px

@@ -1,7 +1,10 @@
 // Desktops and laptops
 @media only screen and (max-width : 978px)
   #logo
-    transform scale(.8,.8)
+    background  url(../img/locus-small.png) no-repeat
+    width       174px
+    height      42px
+    margin-left 20px
   .nav
     margin-left 15px
   .content
@@ -54,6 +57,14 @@
     h1
       background-position center -261px
       height              203px
+  body.services
+    h1
+      background-position center -265px 
+      height              203px
+  body.contact
+    h1
+      background-position center -263px 
+      height              203px
 
 @media screen and (max-width:480px)
   .nav
@@ -82,6 +93,8 @@
   .body
     padding-left 30px
     margin-left  0
+  .content
+    padding-top 40px
   body.contact
     #side-nav
       right         auto
@@ -103,19 +116,31 @@
     h1
       background-position center -464px
       height              162px
-
+  body.services
+    h1
+      background-position center -468px
+      height              162px
+  body.contact
+    h1
+      background-position center -466px
+      height              162px
 @media screen and (max-width:320px)
   body.services
   body.locus
   body.contact
     h1
-      display none
+      background  none
+      text-indent 0
+      height auto
+      padding-left 20px
+      padding-top 100px
+      font-size 24px
     nav
       h1
         display block
   body.home
     h1
-      margin-b
+      line-height 44px
   nav
     padding-top 20px
     position    fixed
@@ -127,7 +152,7 @@
   #navicon
     display block
   .content
-    padding-top 100px
+    padding-top 20px
   #side-nav
     display none
   .subnav
