@@ -2,16 +2,16 @@
   "CodeKitInfo" : "This is a CodeKit project configuration file. It is designed to sync project settings across multiple machines. Modifying the contents of this file can be a poor life decision if you don't know what you're doing. This file is not useful unless accompanied by the project that created it in CodeKit. For more information, see: http:\/\/incident57.com\/codekit",
   "creatorBuild" : "8300",
   "files" : {
-    "\/build\/img\/logo-main.png" : {
+    "\/subpage-template.jade" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
+      "ignore" : 1,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/build\/img\/logo-main.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/build\/img\/logo-main.png",
-      "initialSize" : 5086,
-      "fileType" : 8192
+      "inputAbbreviatedPath" : "\/subpage-template.jade",
+      "outputStyle" : 1,
+      "compileDebug" : 1,
+      "outputAbbreviatedPath" : "\/build\/subpage-template.html",
+      "fileType" : 512
     },
     "\/build\/img\/slideshow-bg.png" : {
       "ignoreWasSetByUser" : 0,
@@ -445,16 +445,14 @@
       "initialSize" : 4992,
       "fileType" : 8192
     },
-    "\/includes\/nav.jade" : {
+    "\/build\/contact-form.php" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
+      "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/includes\/nav.jade",
-      "outputStyle" : 1,
-      "compileDebug" : 1,
-      "outputAbbreviatedPath" : "\/includes\/build\/nav.html",
-      "fileType" : 512
+      "inputAbbreviatedPath" : "\/build\/contact-form.php",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
     },
     "\/build\/contact.html" : {
       "ignoreWasSetByUser" : 0,
@@ -476,15 +474,6 @@
       "initialSize" : 226434,
       "fileType" : 4096
     },
-    "\/build\/contact-form.php" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/build\/contact-form.php",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 2048
-    },
     "\/values.jade" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -494,6 +483,17 @@
       "outputStyle" : 1,
       "compileDebug" : 1,
       "outputAbbreviatedPath" : "\/build\/values.html",
+      "fileType" : 512
+    },
+    "\/includes\/nav.jade" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/includes\/nav.jade",
+      "outputStyle" : 1,
+      "compileDebug" : 1,
+      "outputAbbreviatedPath" : "\/includes\/build\/nav.html",
       "fileType" : 512
     },
     "\/build\/img\/indicator.png" : {
@@ -584,6 +584,17 @@
       "outputAbbreviatedPath" : "\/No Output Path",
       "fileType" : 16
     },
+    "\/build\/img\/jc-logo.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/build\/img\/jc-logo.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/build\/img\/jc-logo.png",
+      "initialSize" : 2167,
+      "fileType" : 8192
+    },
     "\/styles\/slideshow.styl" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
@@ -631,16 +642,16 @@
       "fileType" : 8,
       "debugStyle" : 0
     },
-    "\/subpage-template.jade" : {
+    "\/build\/img\/logo-main.png" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
+      "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/subpage-template.jade",
-      "outputStyle" : 1,
-      "compileDebug" : 1,
-      "outputAbbreviatedPath" : "\/build\/subpage-template.html",
-      "fileType" : 512
+      "inputAbbreviatedPath" : "\/build\/img\/logo-main.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/build\/img\/logo-main.png",
+      "initialSize" : 5086,
+      "fileType" : 8192
     }
   },
   "manualImportLinks" : [

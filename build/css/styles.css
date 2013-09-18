@@ -79,18 +79,24 @@ select{width:285px;height:38px;line-height:38px}
 footer{border-top:solid 5px #0072d3;background:#002c49;zoom:1}
 footer:before,footer:after{content:"";display:table}
 footer:after{clear:both}
-#footer-contact{padding:28px 0;color:#fff;max-width:1040px;margin:0 auto;zoom:1;}
+#footer-contact{padding:20px 0 33px;color:#fff;max-width:1040px;margin:0 auto;zoom:1;}
 #footer-contact:before,#footer-contact:after{content:"";display:table}
 #footer-contact:after{clear:both}
 #footer-contact .location{float:left;width:33%;text-align:center;}
-#footer-contact .location h2{font-size:17.75px;margin-bottom:20px}
+#footer-contact .location h2{font-size:17.75px;margin-bottom:10px}
 #footer-contact .location p{font-size:13px}
 #footer-contact .location a{color:#fff;}
 #footer-contact .location a:hover{text-decoration:underline}
-#footer-copyright{background:#fff;padding:10px 0;font-size:13px;color:#000;text-align:center}
+#footer-copyright{background:#005e9c;padding:18px 0;font-size:13px;color:#fff;}
+#footer-copyright .wrap{max-width:1040px;margin:0 auto;zoom:1}
+#footer-copyright .wrap:before,#footer-copyright .wrap:after{content:"";display:table}
+#footer-copyright .wrap:after{clear:both}
+.jc{width:135px;height:32px;background:url("../img/jc-logo.png") no-repeat 0 3px;text-indent:-9999px;margin-left:12px;display:inline-block}
 .cl{zoom:1}
 .cl:before,.cl:after{content:"";display:table}
 .cl:after{clear:both}
+.right{float:right}
+.left{float:left}
 .content{margin:0 auto;max-width:1040px;position:relative;padding:70px 0 35px;}
 .content p{margin-bottom:25px}
 #side-nav{text-align:right;position:absolute;right:778px;}
