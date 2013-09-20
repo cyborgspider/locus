@@ -9,13 +9,32 @@
     left        50% !important
     margin-left -1000px 
 
+.cycle-pager
+  width     100%
+  height    18px
+  position  relative
+  bottom    40px
+  z-index   1000
+  max-width 80px
+  margin    0 auto
+
+  span
+    background  url(../img/slideshow-pager.png) no-repeat
+    width       20px
+    height      18px
+    float       left
+    text-indent -9999px
+    cursor      pointer
+    &:hover
+    &.cycle-pager-active
+      background-position 100% 0
 
 #caption
   position    absolute
   max-width   700px
   width       100%
   z-index     1000
-  top         215px
+  top         220px
   left        50%
   margin-left -350px
   @media        screen and (max-width:768px)
@@ -30,7 +49,7 @@
     color          white
     text-transform none
     text-align     center
-    margin-bottom  15px 
+    margin-bottom  12px 
     @media        screen and (max-width:768px)
       font-size 24px   
   h2
@@ -40,3 +59,4 @@
     text-transform none
     margin-bottom  0
     text-align     center 
+    white-space    nowrap
