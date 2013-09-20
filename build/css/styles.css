@@ -4,8 +4,9 @@ ol,ul{list-style:none}
 table{border-collapse:separate;border-spacing:0;vertical-align:middle}
 caption,th,td{text-align:left;font-weight:normal;vertical-align:middle}
 a img{border:none}
-body{font:15px/24px 'Roboto',Arial,sans-serif;color:#000;font-weight:400}
-a{text-decoration:none}
+body{font:14px/24px 'Roboto',Arial,sans-serif;color:#000;font-weight:400}
+a{text-decoration:none;}
+a:visited{color:#0072d3}
 nav{padding:44px 0 20px;max-width:1040px;margin:0 auto;position:relative;zoom:1}
 nav:before,nav:after{content:"";display:table}
 nav:after{clear:both}
@@ -36,10 +37,27 @@ nav:after{clear:both}
 .btn-read-more{width:100px;height:47px;background:url("../img/btn-read-more.png");display:block;text-indent:-9999px;margin:0 auto;}
 .btn-read-more:hover{background-position:100% 0}
 body.home .content{padding:0 0 70px}
-body.home h1{font-size:32px;font-weight:500;color:#000;text-transform:uppercase;text-align:center;margin-bottom:55px}
-.service{width:33%;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;display:inline-block;text-align:center;padding:0 30px;vertical-align:top;}
-.service h2{color:#0072d3;font-size:22px;font-weight:500;text-transform:uppercase;margin-bottom:20px}
+body.home h1{font-size:22px;font-weight:500;color:#000;text-transform:uppercase;text-align:center;margin-bottom:27px}
+body.home h2{color:#0072d3;font-size:18px;font-weight:500;text-transform:uppercase;margin-bottom:18px}
+#homepage-services{width:940px;margin:0 auto;border-top:solid 1px #d4d4d4;zoom:1}
+#homepage-services:before,#homepage-services:after{content:"";display:table}
+#homepage-services:after{clear:both}
+.service{width:33%;float:left;display:inline-block;text-align:center;padding:24px 30px 0;vertical-align:top;position:relative;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;}
+.service:after{width:1px;height:100%;background:-webkit-linear-gradient(top, #d4d4d4, #f3f3f3);background:-moz-linear-gradient(top, #d4d4d4, #f3f3f3);background:-o-linear-gradient(top, #d4d4d4, #f3f3f3);background:-ms-linear-gradient(top, #d4d4d4, #f3f3f3);background:linear-gradient(to bottom, #d4d4d4, #f3f3f3);right:0;top:0;content:'';position:absolute}
+.service:last-child:after{background:none}
 .service p{margin-bottom:20px}
+#hometab{width:940px;zoom:1;margin:0 auto 80px;}
+#hometab:before,#hometab:after{content:"";display:table}
+#hometab:after{clear:both}
+@media screen and (max-width:768px){#hometab{width:800px}
+}#hometab-nav{width:308px;float:left;}
+#hometab-nav li{background:#ededed;border:solid 1px #b3b3b3;border-bottom:none;border-left:none;color:#5d5d5d;padding-left:36px;height:62px;line-height:62px;text-transform:uppercase;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;cursor:pointer;}
+#hometab-nav li:hover,#hometab-nav li.active{background:-webkit-linear-gradient(top, #004fcf, #0094f0);background:-moz-linear-gradient(top, #004fcf, #0094f0);background:-o-linear-gradient(top, #004fcf, #0094f0);background:-ms-linear-gradient(top, #004fcf, #0094f0);background:linear-gradient(to bottom, #004fcf, #0094f0);border-color:#00509c;border-left:solid 1px #0055a6;-webkit-box-shadow:inset 0 1px 0 #49c1ff;box-shadow:inset 0 1px 0 #49c1ff;color:#fff}
+#hometab-content{width:328px;float:left;border-top:solid 1px #b3b3b3;border-right:solid 1px #b3b3b3;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;height:180px;}
+#hometab-content .tab-content{display:none;padding:20px 30px;}
+#hometab-content .tab-content p{margin:0}
+#hometab-content .tab-content.active{display:block}
+#contact-content{border-top:solid 1px #b3b3b3;float:left;width:303px;padding:20px 30px 0;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}
 body.locus h1{background:url("../img/bg-locus.jpg") no-repeat center 0;height:261px;text-indent:-9999px}
 body.locus .content h2{color:#fff;background:#0072d3;display:inline-block;padding:0 9px 0 8px;-webkit-border-radius:3px;border-radius:3px;font-size:14px;line-height:25px;margin-bottom:20px;text-transform:uppercase}
 body.services h1{background:url("../img/bg-services.jpg") no-repeat center 0;height:265px;text-indent:-9999px}
@@ -73,9 +91,15 @@ select{width:285px;height:38px;line-height:38px}
 #submit:hover{background-position:100% 0}
 #cancel{background:url("../img/btn-cancel.jpg");float:right;}
 #cancel:hover{background-position:100% 0}
-#slideshow{height:400px;background:url("../img/slideshow-bg.png") no-repeat top center;margin-bottom:48px;position:relative;overflow:hidden}
-#slide-container{position:relative}
-.slide{position:absolute;top:0;width:1000px}
+#slideshow{position:relative;margin:0 auto 55px}
+.cycle-slideshow{position:relative;width:100%;height:330px;}
+.cycle-slideshow img{left:50% !important;margin-left:-1000px}
+#caption{position:absolute;max-width:700px;width:100%;z-index:1000;top:215px;left:50%;margin-left:-350px;}
+@media screen and (max-width:768px){#caption{max-width:500px;margin-left:-250px}
+}@media screen and (max-width:480px){#caption{max-width:300px;margin-left:-150px}
+}#caption h1{font-size:34px;font-weight:500;color:#fff;text-transform:none;text-align:center;margin-bottom:15px;}
+@media screen and (max-width:768px){#caption h1{font-size:24px}
+}#caption h2{color:#fff;font-size:16px;font-weight:500;text-transform:none;margin-bottom:0;text-align:center}
 footer{border-top:solid 5px #0072d3;background:#002c49;zoom:1}
 footer:before,footer:after{content:"";display:table}
 footer:after{clear:both}
@@ -111,7 +135,7 @@ footer:after{clear:both}
 #side-nav .location p{font-size:14px;line-height:18px;margin-bottom:5px}
 #side-nav .location:last-child{margin-bottom:0}
 .body{max-width:670px;margin-left:320px}
-@media only screen and (max-width : 978px){#logo{background:url("../img/locus-small.png") no-repeat;width:174px;height:42px;margin-left:20px}
+@media screen and (max-width : 978px){#logo{background:url("../img/locus-small.png") no-repeat;width:174px;height:42px;margin-left:20px}
 .nav{margin-left:15px}
 .content{max-width:100%}
 .body{margin-left:260px;padding-right:30px}
@@ -119,7 +143,7 @@ footer:after{clear:both}
 body.contact #side-nav{right:75%;}
 body.contact #side-nav .location{width:160px}
 .input-wrap{width:49%}
-}@media only screen and (max-width : 878px){.nav .category{margin-right:25px}
+}@media screen and (max-width : 878px){.nav .category{margin-right:25px}
 form{padding:0}
 }@media screen and (max-width:768px){.nav{margin-left:78px;margin-top:30px;clear:both}
 .body{margin-left:30%}

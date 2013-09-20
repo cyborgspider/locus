@@ -40,9 +40,45 @@
         <li class="category"><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
-    <div id="slideshow"></div>
+    <div id="slideshow">
+      <div data-cycle-pause-on-hover="true" data-cycle-caption="#caption" data-cycle-caption-template="&lt;h1&gt;{{title}}&lt;/h1&gt;&lt;h2&gt;{{desc}}&lt;/h2&gt;" class="cycle-slideshow"><img src="img/hero-1.jpg" data-title="Research and Development Tax Credits" data-desc="Find out how much you are really entitled to and how much you are missing out on R&amp;D tax credit."><img src="img/hero-2.jpg" data-title="Enterprise Zone" data-desc="Now is the perfect time for you to call us for Enterprise Zone program as it will be discontinued soon."><img src="img/hero-3.jpg" data-title="Other Tax Incentives" data-desc="Need help with claiming other tax credits? Let us know and find out what we can do for you."><img src="img/hero-4.jpg" data-title="Contact Us" data-desc="Don't settle for any less than what you can get; we will bring you the most value possible."></div>
+      <div id="caption"></div>
+    </div>
     <div class="content">
-      <h1>Services We Provide</h1>
+      <h1>Professional work and quality service at an affordable cost</h1>
+      <div id="hometab">
+        <ul id="hometab-nav">
+          <li data-tab="feasibility" class="active">Free Feasibility Test</li>
+          <li data-tab="paperwork">On-site Project / Paperwork </li>
+          <li data-tab="post-project">Post-project / Audit</li>
+        </ul>
+        <div id="hometab-content">
+          <div data-tab="feasibility" class="tab-content active">
+            <p>
+              We will answer questions you have about tax credit incentives, and run a feasibility test at no cost to see if your 
+              business qualifies for them, and how much benefits can be expected. Even if you are uncertain, do not hesitate to <a href="contact.html">contact us.</a>
+            </p>
+          </div>
+          <div data-tab="paperwork" class="tab-content">
+            <p>
+              Upon completion of feasibility test, if you decide to engage us for the project, we will start gathering detail 
+              information, interviewing appropriate personnel, and computing numbers and figures to arrive at the maximized 
+              amount of tax credit for you. 
+            </p>
+          </div>
+          <div data-tab="post-project" class="tab-content">
+            <p>
+              Our service is not over until your tax credits are secured. We will assist you with any necessary tasks to do so, 
+              especially if your tax credit claims are subject to an audit by IRS.
+            </p>
+          </div>
+        </div>
+        <div id="contact-content">
+          <h2>Contact us</h2>
+          <p>We will be happy to speak with you about our services and how we can work together. <a href="contact.html">Contact us </a>via email, call, or visit our office.</p>
+        </div>
+      </div>
+      <h1>Services we provide</h1>
       <div id="homepage-services">
         <div class="service">
           <h2>R&amp;D Tax Credit</h2>
@@ -101,5 +137,19 @@
     </script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script src="js/scripts.js"></script>
+    <script src="js/cycle.js"></script>
+    <script>
+      $(function(){
+        $('#hometab-nav').on('click','li', function(){
+            thisTab = $(this);
+            tabName = thisTab.data('tab');
+            tabContent = $('#hometab-content').find('.tab-content[data-tab='+tabName+']')
+            thisTab.siblings().removeClass('active');
+            thisTab.addClass('active');
+            tabContent.siblings().removeClass('active');
+            tabContent.addClass('active');
+        })
+      });    
+    </script>
   </body>
 </html>
