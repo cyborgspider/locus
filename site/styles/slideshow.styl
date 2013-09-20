@@ -1,13 +1,13 @@
 #slideshow
   position relative
-  margin    0 auto 55px  
+  margin    0 auto 55px
 .cycle-slideshow
   position relative
   width    100%
   height   330px
   img
     left        50% !important
-    margin-left -1000px 
+    margin-left -1000px
 
 .cycle-pager
   width     100%
@@ -17,7 +17,8 @@
   z-index   1000
   max-width 80px
   margin    0 auto
-
+  @media        screen and (max-width:768px)
+    bottom 30px
   span
     background  url(../img/slideshow-pager.png) no-repeat
     width       20px
@@ -40,23 +41,26 @@
   @media        screen and (max-width:768px)
     max-width   500px
     margin-left -250px
+    top         210px
   @media        screen and (max-width:480px)
     max-width   300px
-    margin-left -150px    
+    margin-left -150px
   h1
     font-size      34px
     font-weight    500
     color          white
     text-transform none
     text-align     center
-    margin-bottom  12px 
+    margin-bottom  12px
     @media        screen and (max-width:768px)
-      font-size 24px   
+      font-size 24px
   h2
     color          white
     font-size      16px
     font-weight    500
     text-transform none
     margin-bottom  0
-    text-align     center 
+    text-align     center
     white-space    nowrap
+    @media        screen and (max-width:768px)
+      white-space normal

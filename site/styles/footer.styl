@@ -27,10 +27,20 @@ footer
   padding    18px 0
   font-size  13px
   color      white
+  @media screen and (max-width:768px)
+    padding-left 20px
+    padding-right 20px
   .wrap
     max-width 1040px
     margin    0 auto
     clearfix()
+    @media screen and (max-width:480px)
+      .left
+      .right
+        float none
+        text-align center
+      .left
+        margin-bottom 10px
 .jc
   width       135px
   height      32px
