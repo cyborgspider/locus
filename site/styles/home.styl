@@ -1,6 +1,6 @@
 body.home
   .content
-    padding 0 0 70px
+    padding 0 0 45px
   h1
     font-size      22px
     font-weight    500
@@ -19,17 +19,24 @@ body.home
   width  940px
   margin 0 auto
   border-top     solid 1px #d4d4d4
-
   clearfix()
+  @media screen and (max-width:768px)   
+    width 100%
+  @media screen and (max-width:480px)   
+    border-top none   
 .service
   width          33%
   float          left
-  display        inline-block
   text-align     center
   padding        24px 30px 0
   vertical-align top
   position       relative
   box-sizing     border-box
+  margin-bottom  30px
+  @media         screen and (max-width:480px) 
+    clear   both
+    padding 0 50px
+    width   100%    
   &:after
     width      1px
     height     100%
@@ -38,6 +45,8 @@ body.home
     top        0
     content    ''
     position   absolute
+    @media screen and (max-width:480px) 
+      background none
   &:last-child
     &:after
       background none    
@@ -48,8 +57,8 @@ body.home
   width  940px
   clearfix()
   margin 0 auto 80px
-  @media        screen and (max-width:768px)
-    width 800px
+  @media screen and (max-width:768px)
+    width 640px
 #hometab-nav
   width 308px
   float left
@@ -81,6 +90,8 @@ body.home
   border-right solid 1px #b3b3b3
   box-sizing   border-box
   height       180px
+  @media screen and (max-width:480px) 
+    clear both
   .tab-content
     display none
     padding 20px 30px
@@ -95,3 +106,6 @@ body.home
   width      303px
   padding    20px 30px 0
   box-sizing border-box
+  @media screen and (max-width:768px)  
+    border-top none
+    clear      both
