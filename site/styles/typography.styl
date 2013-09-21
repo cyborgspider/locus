@@ -9,3 +9,34 @@ a
   &:visited
     color $blue
 
+h2
+  color          $blue
+  font-size      18px
+  font-weight    500
+  text-transform uppercase
+  margin-bottom  18px
+
+h2.tag
+  color         white
+  background    $blue
+  display       inline-block
+  padding       0 9px 0 8px
+  border-radius 3px
+  font-size     14px
+  line-height   25px
+  margin-bottom 20px
+  up()  
+
+h2.list
+  color         $blue-light
+  position      relative
+  padding-left  20px
+  margin-bottom 5px
+  &:after
+    background url(../img/ind-down.png) no-repeat
+    width      12px
+    height     9px
+    content    ''
+    position   absolute
+    left       0
+    top        8px

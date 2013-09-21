@@ -27,16 +27,16 @@ body
 
 .content
   margin    0 auto
-  max-width 1040px
+  max-width 960px
   position  relative
-  padding   70px 0 35px
+  padding   70px 0 40px
   p
     margin-bottom 25px
 
 #side-nav
+  width      220px
   text-align right
-  position   absolute
-  right      778px
+  float      left
   .side-nav-link
     display       block
     clear         both
@@ -78,8 +78,29 @@ body
       margin-bottom 0
 
 .body
-  max-width       670px
-  margin-left 320px
+  max-width   680px
+  margin-left 280px
+
+.grid
+  position    absolute 
+  z-index     99999
+  width       960px
+  height      2000px
+  left        50%
+  margin-left -480px
+  .col
+    background   blue
+    opacity      0.2
+    width        280px
+    height       100%
+    margin-right 40px
+    float        left
+  .col+.col
+    background green
+    opacity 0.2  
+  .col+.col+.col
+    background red
+    opacity 0.2  
 
 @import 'media'
 

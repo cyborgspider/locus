@@ -1,6 +1,6 @@
 nav
-  padding 44px 0 20px
-  max-width   1040px
+  padding 34px 0 20px
+  max-width   960px
   margin  0 auto
   position relative
   clearfix()
@@ -15,21 +15,25 @@ nav
     height  100%
     display block
 .nav
-  margin-left 120px
-  float       left
+  float right
+  width 680px
   .category
     float        left
-    margin-right 75px
+    margin-right 105px
+    &:nth-child(2)
+      margin-right 50px
     &:last-child
       margin-right 0
+      float        right
   .category>a
-    float        left
     font-size    18px
     float        left
     color        black
     font-weight  700
     margin-right 20px
     up()
+  .category:last-child >a
+    margin 0
   .category.active>a
     color $blue
 .subnav

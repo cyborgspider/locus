@@ -1,6 +1,8 @@
 body.home
   .content
-    padding 0 0 45px
+    padding 0 40px 45px
+    @media only screen and (max-width : 1024px)
+      padding 0 0 45px
   h1
     font-size      22px
     font-weight    500
@@ -18,23 +20,22 @@ body.home
     margin-bottom  18px
 
 #homepage-services
-  width  940px
   margin 0 auto
   border-top     solid 1px #d4d4d4
   clearfix()
-  @media screen and (max-width:768px)
-    width 100%
   @media screen and (max-width:480px)
     border-top none
 .service
-  width          33%
+  width          320px
   float          left
   text-align     center
   padding        24px 30px 0
   vertical-align top
   position       relative
   box-sizing     border-box
-  margin-bottom  30px
+  margin-bottom  20px
+  @media only screen and (max-width : 1024px)
+    width 33.333333%  
   @media         screen and (max-width:480px)
     clear   both
     padding 0 50px
@@ -56,16 +57,13 @@ body.home
     margin-bottom 20px
 
 #hometab
-  width  940px
   clearfix()
-  margin 0 auto 80px
-  @media screen and (max-width:768px)
-    width 100%
+  margin 0 auto 60px
 #hometab-nav
-  width 308px
+  width 320px
   float left
-  @media screen and (max-width:768px)
-    margin-left 30px
+  @media only screen and (max-width : 1024px)
+    width 33.333333%
   li
     background     #ededed
     border         solid 1px #b3b3b3
@@ -88,14 +86,15 @@ body.home
       color        white
 
 #hometab-content
-  width        328px
+  width        320px
   float        left
   border-top   solid 1px #b3b3b3
   border-right solid 1px #b3b3b3
   box-sizing   border-box
   height       180px
-  @media screen and (max-width:768px)
-    border-right 0
+  @media only screen and (max-width : 1024px)
+    width 33.333333%
+
   @media screen and (max-width:480px)
     clear both
   .tab-content
@@ -109,12 +108,8 @@ body.home
 #contact-content
   border-top solid 1px #b3b3b3
   float      left
-  width      303px
+  width      320px
   padding    20px 30px 0
   box-sizing border-box
-  @media screen and (max-width:768px)
-    border-top none
-    clear      both
-    float      none
-    margin     0 auto
-    width      100%
+  @media only screen and (max-width : 1024px)
+    width 33.333333%  

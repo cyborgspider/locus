@@ -3,10 +3,8 @@ body.services
     background  url(../img/bg-services.jpg) no-repeat center 0
     height      265px
     text-indent -9999px
+    margin-top  -40px
   .content
-    h2
-      color     $blue-light
-      font-size 18px
     h3
       color         white
       background    $blue
@@ -17,9 +15,9 @@ body.services
       line-height   25px
       margin-bottom 20px
       up()
-    ul
+    ul.list
       list-style    square
-      margin-left   20px
+      margin-left   40px
       margin-bottom 30px
 
 #tab-nav
@@ -27,6 +25,7 @@ body.services
   float left
   clearfix()
   border-bottom solid 2px #0053d1
+  margin 0
   li
     float         left
     background    linear-gradient(top, #e8e8e8, #fcfcfc)
@@ -55,3 +54,7 @@ body.services
   clear   both
   &.active
     display block
+
+.readmore
+  display block
+  margin-top -20px
