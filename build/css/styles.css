@@ -78,17 +78,17 @@ body.home h1{font-size:22px;font-weight:500;color:#000;text-transform:uppercase;
 }body.locus h1{background:url("../img/bg-locus.jpg") no-repeat center 0;height:261px;text-indent:-9999px;margin-top:-40px}
 body.services h1{background:url("../img/bg-services.jpg") no-repeat center 0;height:265px;text-indent:-9999px;margin-top:-40px}
 body.services .content h3{color:#fff;background:#0072d3;display:inline-block;padding:0 9px 0 8px;-webkit-border-radius:3px;border-radius:3px;font-size:14px;line-height:25px;margin-bottom:20px;text-transform:uppercase}
-body.services .content ul.list{list-style:square url("../img/list-bullet.png");margin-left:40px;margin-bottom:30px;color:#0072d3}
+body.services .content ul.list{list-style:square url("../img/list-bullet.png");margin-left:40px;margin-bottom:30px;color:#2e9fff}
 body.services .content ul.list-bullet{list-style:square;margin-left:40px;margin-bottom:30px}
 #tab-nav{list-style:none;float:left;zoom:1;border-bottom:solid 2px #0053d1;margin:0;}
 #tab-nav:before,#tab-nav:after{content:"";display:table}
 #tab-nav:after{clear:both}
 #tab-nav li{float:left;background:-webkit-linear-gradient(top, #fcfcfc, #e8e8e8);background:-moz-linear-gradient(top, #fcfcfc, #e8e8e8);background:-o-linear-gradient(top, #fcfcfc, #e8e8e8);background:-ms-linear-gradient(top, #fcfcfc, #e8e8e8);background:linear-gradient(to bottom, #fcfcfc, #e8e8e8);border:solid 1px #b3b3b3;border-bottom:none;-webkit-border-top-left-radius:2px;border-top-left-radius:2px;-webkit-border-top-right-radius:2px;border-top-right-radius:2px;color:#5d5d5d;padding:5px 12px;height:53px;line-height:18px;max-width:110px;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;margin-right:1px;cursor:pointer;}
-#tab-nav li.long{max-width:180px}
+#tab-nav li.long{max-width:180px;margin-right:0}
 #tab-nav li:hover,#tab-nav li.active{background:-webkit-linear-gradient(top, #0094f0, #004fcf);background:-moz-linear-gradient(top, #0094f0, #004fcf);background:-o-linear-gradient(top, #0094f0, #004fcf);background:-ms-linear-gradient(top, #0094f0, #004fcf);background:linear-gradient(to bottom, #0094f0, #004fcf);border-color:#00509c;-webkit-box-shadow:inset 0 1px 0 #49c1ff;box-shadow:inset 0 1px 0 #49c1ff;color:#fff}
 .tab-content{display:none;padding:30px 30px 0;clear:both;}
 .tab-content.active{display:block}
-.readmore{display:block;width:600px;height:37px;line-height:37px;background:url("../img/read-more-less-tab.png") 0 -37px no-repeat;margin-top:-10px;color:#0072d3;}
+.readmore{display:block;width:600px;height:37px;line-height:37px;background:url("../img/read-more-less-tab.png") 0 -37px no-repeat;margin-top:-10px;color:#0072d3;margin-bottom:20px;}
 .readmore.exp{background-position:0 0;margin-bottom:10px}
 body.contact h1{background:url("../img/bg-contact.jpg") no-repeat center 0;height:263px;text-indent:-9999px;margin-top:-40px}
 body.contact .content{min-height:625px}
@@ -201,11 +201,8 @@ form{padding:0}
 body.locus h1{background-position:center -261px;height:203px}
 body.services h1{background-position:center -265px;height:203px}
 body.contact h1{background-position:center -263px;height:203px}
-}@media screen and (max-width:480px){body.locus h1{background-position:center -464px;height:162px}
-body.services h1{background-position:center -468px;height:162px}
-body.contact h1{background-position:center -466px;height:162px}
-body.services h1,body.locus h1,body.contact h1{margin-top:82px}
-nav{padding-top:20px;position:fixed;background:#fff;width:100%;z-index:30000}
+}@media screen and (max-width:568px){body.services h1,body.locus h1,body.contact h1{margin-top:82px}
+nav{padding-top:20px;position:fixed;background:#fff;width:100%;z-index:30000;top:0}
 .nav{display:none}
 #navicon{display:block}
 #side-nav{width:100%;text-align:left;margin-left:20px;}
@@ -222,7 +219,10 @@ form .row{margin-bottom:0}
 #hometab-nav,#hometab-content,#contact-content{width:100%}
 #hometab-content{height:auto}
 #home-tab{margin-bottom:40px}
-.body-wrap{width:480px}
+.body-wrap{width:100%}
+}@media screen and (max-width:480px){body.locus h1{background-position:center -464px;height:162px}
+body.services h1{background-position:center -468px;height:162px}
+body.contact h1{background-position:center -466px;height:162px}
 }@media screen and (max-width:320px){body.services h1,body.locus h1,body.contact h1{background:none;text-indent:0;height:auto;padding-left:20px;padding-top:20px;font-size:24px}
 body.services nav h1,body.locus nav h1,body.contact nav h1{display:block}
 body.home .content h1{display:block;margin-top:102px;line-height:34px}
