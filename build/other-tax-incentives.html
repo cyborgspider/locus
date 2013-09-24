@@ -309,7 +309,7 @@
           $(this).next().toggle();
           
           var text = $('.readmore').text();
-          $('.readmore').text(text == "Read More" ? "Read Less" : "Read More");            
+          $('.readmore').text(text == "Read Less" ? "Read More" : "Read Less").toggleClass('exp');            
         });
         $('#tab-section').on('click','#tab-nav li', function(){
             thisTab = $(this);

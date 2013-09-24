@@ -16,9 +16,14 @@ body.services
       margin-bottom 20px
       up()
     ul.list
+      list-style    square url(../img/list-bullet.png)
+      margin-left   40px
+      margin-bottom 30px
+    ul.list-bullet
       list-style    square
       margin-left   40px
       margin-bottom 30px
+
 
 #tab-nav
   list-style none
@@ -57,4 +62,11 @@ body.services
 
 .readmore
   display block
-  margin-top -20px
+  width 600px
+  height 37px
+  line-height 37px
+  background url(../img/read-more-less-tab.png) 0 -37px no-repeat
+  margin-top -10px
+  &.exp
+    background-position 0 0
+    margin-bottom 10px

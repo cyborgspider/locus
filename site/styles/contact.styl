@@ -14,15 +14,19 @@ form
     clearfix()
 
 .input-wrap
-  position     relative
-  width        285px
+  position   relative
+  width      285px
   float      left
+  height     40px
 .input-wrap+.input-wrap
   float right
 
 .parsley-error-list
   position  absolute
   font-size 11px
+
+.placeholder
+  color #aaa
 
 input[type="text"]
 textarea
@@ -34,6 +38,7 @@ textarea
   box-sizing    border-box
   padding       0 10px
   line-height   38px
+  height        38px
   font-size     15px
   &.error
     background   #f8cfcf
