@@ -33,7 +33,8 @@ module.exports =function(grunt){
       stylus:{
         compile: {
           files: {
-            'build/css/styles.css': ['site/styles/styles.styl'] // compile and concat into single file
+            'build/css/styles.css': ['site/styles/styles.styl'], // compile and concat into single file
+             'build/css/ie.css': ['site/styles/ie.styl'] // compile and concat into single file
           }
         }
 

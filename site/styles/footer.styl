@@ -7,17 +7,16 @@ footer
   color   white
   width   960px
   margin  0 auto
-  @media only screen and (max-width : 1024px)
-    padding 20px 0 33px 
   @media only screen and (max-width : 768px)
     padding 20px 20px 33px
+    width 100%
   clearfix()
   .location
     float      left
     width      320px
     text-align center
     @media only screen and (max-width : 1024px)
-      width 33.333333%    
+      width 33.333333%
     @media only screen and (max-width: 480px)
       width         100%
       clear         both
@@ -29,15 +28,15 @@ footer
       @media only screen and (max-width : 480px)
         position absolute
       @media only screen and (max-width : 320px)
-        position   relative    
-        text-align left    
+        position   relative
+        text-align left
     p
       font-size 13px
       @media only screen and (max-width : 480px)
         margin-left 210px
         text-align  left
       @media only screen and (max-width : 320px)
-        margin-left 0        
+        margin-left 0
     a
       color white
       &:hover
@@ -54,7 +53,8 @@ footer
     width 960px
     margin    0 auto
     clearfix()
-    @media screen and (max-width:480px)
+    @media screen and (max-width:768px)
+      width 100%
       .left
       .right
         float none

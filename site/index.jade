@@ -2,7 +2,8 @@
 html
   include includes/head
   body.home
-    include includes/nav
+    .body-wrap
+      include includes/nav
     #slideshow
       .cycle-slideshow(data-cycle-pause-on-hover='true', data-cycle-caption="#caption", data-cycle-caption-template="<h1>{{title}}</h1><h2>{{desc}}</h2>")
         img(src="img/hero-1.jpg", data-title="Research and Development Tax Credits", data-desc="Find out how much you are really entitled to and how much you are missing out on R&D tax credit.")
@@ -12,45 +13,46 @@ html
         .cycle-pager
       #caption
 
-    .content
-      h1 Professional work and quality service at an affordable cost
-      #hometab
-        ul#hometab-nav
-          li.active(data-tab='feasibility') Free Feasibility Test
-          li(data-tab='paperwork') On-site Project / Paperwork 
-          li(data-tab='post-project') Post-project / Audit
-        #hometab-content
-          .tab-content.active(data-tab='feasibility')
-            p We will answer questions you have about tax credit incentives, and run a feasibility test at no cost to see if your 
-              | business qualifies for them, and how much benefits can be expected. Even if you are uncertain, do not hesitate to 
-              a(href="contact.html") contact us.
-          .tab-content(data-tab='paperwork')
-            p Upon completion of feasibility test, if you decide to engage us for the project, we will start gathering detail 
-              | information, interviewing appropriate personnel, and computing numbers and figures to arrive at the maximized 
-              | amount of tax credit for you. 
-          .tab-content(data-tab='post-project')
-            p Our service is not over until your tax credits are secured. We will assist you with any necessary tasks to do so, 
-              | especially if your tax credit claims are subject to an audit by IRS.
-        #contact-content
-          h2 Contact us
-          p We will be happy to speak with you about our services and how we can work together. 
-            a(href="contact.html") Contact us 
-            | via email, call, or visit our office.
+    .body-wrap
+      .content
+        h1 Professional work and quality service at an affordable cost
+        #hometab
+          ul#hometab-nav
+            li.active(data-tab='feasibility') Free Feasibility Test
+            li(data-tab='paperwork') On-site Project / Paperwork
+            li(data-tab='post-project') Post-project / Audit
+          #hometab-content
+            .tab-content.active(data-tab='feasibility')
+              p We will answer questions you have about tax credit incentives, and run a feasibility test at no cost to see if your
+                | business qualifies for them, and how much benefits can be expected. Even if you are uncertain, do not hesitate to
+                <a href="contact.html"> contact us</a>.
+            .tab-content(data-tab='paperwork')
+              p Upon completion of feasibility test, if you decide to engage us for the project, we will start gathering detail
+                | information, interviewing appropriate personnel, and computing numbers and figures to arrive at the maximized
+                | amount of tax credit for you.
+            .tab-content(data-tab='post-project')
+              p Our service is not over until your tax credits are secured. We will assist you with any necessary tasks to do so,
+                | especially if your tax credit claims are subject to an audit by IRS.
+          #contact-content
+            h2 Contact us
+            p We will be happy to speak with you about our services and how we can work together.
+              <a href="contact.html"> Contact us</a>
+              | via email, call, or visit our office.
 
-      h1 Services we provide
-      #homepage-services
-        .service
-          h2 R&amp;D Tax Credit
-          p The R&amp;D Tax Credit is an overlooked and misunderstood tax benefit that most taxpayers and many tax preparers associate only with technology.
-          a.btn-read-more(href="rd-tax-credit.html") Read More
-        .service
-          h2 Enterprise Zone
-          p The California Enterprise Zone Program offers state income tax credits to companies operating in one or more of the 42 zones statewide. 
-          a.btn-read-more(href="enterprise-zone.html") Read More
-        .service
-          h2 Other Tax Incentives
-          p Our tax credit specialist team has worked with many other incentives for years; we can help you identify and capture potential extra revenues. 
-          a.btn-read-more(href="other-tax-incentives.html") Read More            
+        h1 Services we provide
+        #homepage-services
+          .service
+            h2 R&amp;D Tax Credit
+            p The R&amp;D Tax Credit is an overlooked and misunderstood tax benefit that most taxpayers and many tax preparers associate only with technology.
+            a.btn-read-more(href="rd-tax-credit.html") Read More
+          .service
+            h2 Enterprise Zone
+            p The California Enterprise Zone Program offers state income tax credits to companies operating in one or more of the 42 zones statewide.
+            a.btn-read-more(href="enterprise-zone.html") Read More
+          .service
+            h2 Other Tax Incentives
+            p Our tax credit specialist team has worked with many other incentives for years; we can help you identify and capture potential extra revenues.
+            a.btn-read-more(href="other-tax-incentives.html") Read More
 
     include includes/footer
     block script
@@ -66,4 +68,4 @@ html
               tabContent.siblings().removeClass('active');
               tabContent.addClass('active');
             })
-        });    
+        });
