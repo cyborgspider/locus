@@ -123,8 +123,10 @@ select{width:285px;height:38px;line-height:38px}
 }@media screen and (max-width:480px){#caption{max-width:300px;margin-left:-150px}
 }#caption h1{font-size:34px;font-weight:500;color:#fff;text-transform:none;text-align:center;margin-bottom:12px;}
 @media screen and (max-width:768px){#caption h1{font-size:24px}
+}@media screen and (max-width:360px){#caption h1{margin-bottom:2px;font-size:28px}
 }#caption h2{color:#fff;font-size:16px;font-weight:500;text-transform:none;margin-bottom:0;text-align:center;white-space:nowrap;}
 @media screen and (max-width:768px){#caption h2{white-space:normal}
+}@media screen and (max-width:360px){#caption h2{padding:0 10px;font-size:14px}
 }footer{border-top:solid 5px #0072d3;background:#002c49;zoom:1}
 footer:before,footer:after{content:"";display:table}
 footer:after{clear:both}
@@ -204,7 +206,7 @@ form{padding:0}
 body.locus h1{background-position:center -261px;height:203px}
 body.services h1{background-position:center -265px;height:203px}
 body.contact h1{background-position:center -263px;height:203px}
-}@media screen and (max-width:640px){body.services h1,body.locus h1,body.contact h1{margin-top:82px}
+}@media screen and (max-width:720px){body.services h1,body.locus h1,body.contact h1{margin-top:82px}
 nav{padding-top:20px;position:fixed;background:#fff;width:100%;z-index:30000;top:0}
 .nav{display:none}
 #navicon{display:block}
@@ -234,5 +236,5 @@ body.home .content h1.header{display:block;margin-top:102px;line-height:34px}
 .subnav{clear:both}
 #tab-nav li.long{height:auto}
 .body{padding:0 20px}
-#slideshow{display:none}
+}@media screen and (max-width:320px){#slideshow{display:none}
 }
