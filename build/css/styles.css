@@ -123,7 +123,7 @@ select{width:285px;height:38px;line-height:38px}
 }@media screen and (max-width:480px){#caption{max-width:300px;margin-left:-150px}
 }#caption h1{font-size:34px;font-weight:500;color:#fff;text-transform:none;text-align:center;margin-bottom:12px;}
 @media screen and (max-width:768px){#caption h1{font-size:24px}
-}@media screen and (max-width:360px){#caption h1{margin-bottom:2px;font-size:28px}
+}@media screen and (max-width:360px){#caption h1{margin-bottom:5px;font-size:28px}
 }#caption h2{color:#fff;font-size:16px;font-weight:500;text-transform:none;margin-bottom:0;text-align:center;white-space:nowrap;}
 @media screen and (max-width:768px){#caption h2{white-space:normal}
 }@media screen and (max-width:360px){#caption h2{padding:0 10px;font-size:14px}
